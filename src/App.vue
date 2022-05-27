@@ -3,12 +3,15 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1>Hello</h1>
     <div>{{ test }}</div>
+    <HelloVue />
   </div>
 </template>
 
 <script>
+import HelloVue from "./components/HelloVue.vue";
 export default {
   name: "App",
+  components: { HelloVue },
   data() {
     return {
       test: "Hello Vietnam",
