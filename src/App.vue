@@ -4,14 +4,16 @@
     <h1>Hello</h1>
     <div>{{ test }}</div>
     <HelloVue />
+    <ContactComp />
   </div>
 </template>
 
 <script>
 import HelloVue from "./components/HelloVue.vue";
+import ContactComp from "./components/ContactComp.vue";
 export default {
   name: "App",
-  components: { HelloVue },
+  components: { ContactComp, HelloVue },
   data() {
     return {
       test: "Hello Vietnam",
